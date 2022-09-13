@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - function to return 1 if c is in caps or small letters
- *
+ *@c: input character
  * Return: Returns 1 or 0
  */
 
