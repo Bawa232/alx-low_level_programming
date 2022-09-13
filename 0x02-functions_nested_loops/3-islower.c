@@ -12,8 +12,10 @@ int _islower(int c)
 	char lower;
 
 	for (lower = 'a'; lower <= 'z'; lower++)
+	{
 		if (lower == 'c')
 			number = 1;
+	}
 
 	return (number);
 }
