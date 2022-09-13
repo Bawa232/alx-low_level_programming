@@ -13,8 +13,6 @@ int _islower(int c)
 	while (lower <= 'z')
 		if (lower == 'c')
 			return (1);
-		else
-			return (0);
 	lower++;
 
 	return (0);
