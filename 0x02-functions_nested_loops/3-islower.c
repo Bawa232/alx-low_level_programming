@@ -8,12 +8,13 @@
 
 int _islower(int c)
 {
+	int number = 0;
 	char lower = 'a';
 
 	while (lower <= 'z')
 		if (lower == 'c')
-			return (1);
+			number = 1;
 	lower++;
 
-	return (0);
+	return (number);
 }
