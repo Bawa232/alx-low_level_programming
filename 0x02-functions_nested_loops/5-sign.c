@@ -1,28 +1,26 @@
 #include "main.h"
 
 /**
- *print_sign - prints the sign of a number
- *@n:inout character
- * Return: Returns 0, 1 or -1
+ * print_sign - prints the sign of a number
+ * @n: positive, zero or negative integer
+ * Return: 1 if it's positive, 0 if it's negative and -1 if it's negative
  */
 
-int print_sign(int n);
-
+int print_sign(int n)
 {
-	int number;
-
 	if (n > 0)
-	{ _putchar('+');
-		number = 1;
+	{
+		_putchar('+');
+		return (1);
 	}
-	else if (n == 0)
-	{ _putchar('0');
-		number = 0;
+	else if (n < 0)
+	{
+		_putchar('-');
+		return (-1);
 	}
 	else
-	{ _putchar('-')
-		number = -1;
+	{
+		_putchar('0');
+		return (0);
 	}
-
-	return (number);
 }
