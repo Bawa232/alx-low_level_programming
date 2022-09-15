@@ -8,7 +8,7 @@
 
 int _isdigit(int c)
 {
-	for(int digit = 0; digit < 10; digit++)
+	for (int digit = 0; digit < 10; digit++)
 	{
 		if (c == digit)
 			return (1);
