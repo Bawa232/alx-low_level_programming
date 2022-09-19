@@ -2,7 +2,8 @@
 
 /**
  * swap_int - swapping address of two pointers
- *
+ *@a: pointer address
+ *@b: pointer address
  * Returns: Nada!
  */
 
