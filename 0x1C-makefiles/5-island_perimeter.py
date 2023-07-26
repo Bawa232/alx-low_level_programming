@@ -1,38 +1,39 @@
 #!/usr/bin/python3
 """Calculate the island perimeter"""
 
+
 def island_perimeter(grid):
     """function that calculates perimeter"""
-    width=0
-    height=0
+    width = 0
+    height = 0
     width_len = 0
     water_start = 1
     temp_width = 0
 
-    #get the width
+    # get the width
     height_boxes = len(grid)
-    
+
     if height_boxes == 0:
         return 0
 
     for i in grid:
         width_len = len(i)
-        temp_flag = 0;
-        temp_start = 0;
+        temp_flag = 0
+        temp_start = 0
 
         if width_len == 0:
-            break;
+            break
 
         for x in range(len(i)):
             if i[x] == 1:
-                temp_flag = 1;
-                temp_start = x;
+                temp_flag = 1
+                temp_start = x
 
         if temp_flag == 1:
             temp_width = 0
             for x in i[temp_start:]:
                 if x == 0:
-                    break;
+                    break
                 temp_width += 1
                 print('temp_width', temp_width)
 
@@ -42,6 +43,7 @@ def island_perimeter(grid):
         temp_flag = 0
 
     return width
+
 
 if __name__ == "__main__":
     grid = [
